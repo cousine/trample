@@ -1,6 +1,6 @@
-gem 'sevenwire-rest-client'
+gem 'sevenwire-http_client'
 require 'log4r'
-require 'rest_client'
+require 'http_client'
 
 module Trample
   autoload :Configuration, File.dirname(__FILE__) + "/trample/configuration"

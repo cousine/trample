@@ -36,11 +36,11 @@ module Trample
       end
 
       def get(page)
-        RestClient.get(page.url, :cookies => cookies)
+        HttpClient.get(page.url, :cookies => cookies)
       end
 
       def post(page)
-        RestClient.post(page.url, page.parameters, :cookies => cookies)
+        HttpClient.post(page.url, page.parameters, :cookies => cookies)
       end
   end
 end
